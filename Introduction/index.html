@@ -3,16 +3,140 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my web page</title>
+    <title>Jakub Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans
+    +Pro:300,900&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
-    <img src="https://github.com/JakubM1999/Vefsk-linn/blob/main/Introduction/images/_7030331.JPG?raw=true" alt="me">
-    <p class="username">@JakubM1999</p>
-    <p>I love learning coding!</p>
+    <header>
+        <div class="logo">
+            <h1>JAKUB</h1>
+        </div>
+        <button class="nav-toggle" area-lable="toggle navigation">
+            <span class="Hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a> </li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a> </li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a> </li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi I am <strong>Jakub Mierzejek</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">graphic designer</p>
+        <img src="images/jakubpic.jpg" alt="pic of Jakub" class="intro__img">
+    </section>
+
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+
+        <h2 class="section__title section__title--services">What I do</h2>
+
+        <div class="services">
+
+            <div class="service">
+                <h3>Graphic Design</h3>
+                <p>When I say graphic design what I mean is, that I like to do posters,
+                    create logos and all kinds of work where i can use my creativity
+                    and imagination to do cool looking design or very creative and clever
+                    logos.
+                </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Coding</h3>
+                <p>I am new to coding but i learned some basics when i was learing for
+                    graphic designer. I got some basic understading of HTML and CSS, but that´s
+                    about it. I was always intrested in coding and I knew that one day I would
+                    get the chance to improve my skills and one day become web developer.
+                </p>
+            </div> <!-- / service -->
+
+            <div class="service">
+                <h3>Art & digital art</h3>
+                <p>One of my most beloved hobbies is Drawing I´ve been doing this since i was a
+                    child. I love the classic pen and paper but reacently I been using my drawing tablet
+                    that i got for chistmas from my fiancé, and I´m still improving my skills using it.
+                </p>
+            </div> <!-- / service -->
+        </div><!-- / service -->
+
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!--About Me-->
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about"> Graphic designer</p>
+
+        <div class="about-me__body">
+            <p>So my name is Jakub Mierzejek. I was born in Poland year 1999 in a small city named Szczytno,
+                after kindergarten me and my famly moved to England and we lived in London for a while then moved
+                to a smaller city. After that we got a opertunity in Iceland so moved there for 4 years. </p>
+            <p>We went back to Poland for 2 years and finally figured it out that Iceland is our home and we
+                wanted to stay. I was around 13 or 14 at that time. I got older finished my graphic designer degree,
+                started seeing the most beautilful and wonderful women of my life thet i have known since i was 9 years
+                old and proposed to her (Best day of my life). She moved in with me and after a year we desided that I
+                should go back to school again.
+            </p>
+        </div>
+
+        <img src="images/ja.jpg" alt="bearded Jakub">
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+
+            <!--portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="images/portfolio1.jpeg" alt="spiderman" class="portfolio__img">
+            </a>
+
+            <!--portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="images/portfolio2.jpeg" alt="batman" class="portfolio__img">
+            </a>
+
+            <!--portfolio item 01-->
+            <a href="#" class="portfolio__item">
+                <img src="images/portfolio3.jpeg" alt="sonic" class="portfolio__img">
+            </a>
+
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="mailto:Gemixe1234@gmail.com" class="footer__link">Gemixe1234@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com">a</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://codepen.com">b</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">c</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://youtube.com">d</a></li>
+        </ul>
+    </footer>
+
+
 </body>
 
 </html>
